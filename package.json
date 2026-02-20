@@ -1,0 +1,36 @@
+{
+  "name": "solana-stablecoin-amm-dex",
+  "version": "1.0.0",
+  "description": "Production-grade Solana concentrated liquidity AMM DEX optimized for stablecoins",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test --skip-local-validator",
+    "test:local": "anchor test",
+    "lint": "cargo clippy",
+    "format": "cargo fmt"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "amm",
+    "dex",
+    "stablecoin",
+    "concentrated-liquidity",
+    "defi"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.3.3"
+  }
+}
