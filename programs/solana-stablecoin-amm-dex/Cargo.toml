@@ -1,0 +1,21 @@
+[package]
+name = "solana-stablecoin-amm-dex"
+version = "1.0.0"
+description = "Production-grade Solana concentrated liquidity AMM DEX optimized for stablecoins"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_stablecoin_amm_dex"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.30.0"
+anchor-spl = "0.30.0"
+solana-program = "~1.18.0"
